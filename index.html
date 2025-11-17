@@ -40,7 +40,7 @@ Deploy instructions:
       body {
         margin: 0;
         min-height: 100vh;
-        background: radial-gradient(circle at top, rgba(4, 11, 26, 0.94), rgba(3, 7, 15, 0.96));
+        background: #040916;
         color: #fef8f8;
         display: flex;
         flex-direction: column;
@@ -51,13 +51,21 @@ Deploy instructions:
         content: "";
         position: fixed;
         inset: 0;
-        background-image: url("Header.jpg"), url("Header.jpg"), radial-gradient(circle, transparent 45%, rgba(0, 0, 0, 0.9));
-        background-size: 130% auto, 90% auto, cover;
-        background-position: top left, bottom right, center;
+        background-image: url("Header.jpg");
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        filter: blur(28px);
-        opacity: 0.35;
+        filter: blur(30px);
+        transform: scale(1.03);
+        opacity: 0.65;
         z-index: -2;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at top, rgba(4, 11, 26, 0.85), rgba(3, 7, 15, 0.85));
+        z-index: -1;
       }
       a {
         color: inherit;
