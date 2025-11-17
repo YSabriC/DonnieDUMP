@@ -12,26 +12,25 @@ Deploy instructions:
     <title>Donnie Dump</title>
     <meta
       name="description"
-      content="Donnie Dump is the vivid memecoin born from a roast. Copy the official CA, relive the viral tweet, and plaster the memes everywhere."
+      content="The most American memecoin on the planet. Donnie Dump turns a Truth Social roast into a patriotic movement with a verified contract and nonstop meme fire."
     />
-    <meta property="og:title" content="Donnie Dump - Official CA" />
+    <meta property="og:title" content="Donnie Dump - Patriotic Meme Power" />
     <meta
       property="og:description"
-      content="Rep. Marjorie Taylor Greene tried to dunk on Donnie. Now we're running the tweet, the CA, and the memes non-stop."
+      content="Rep. MTG called him Donnie Dump. We minted it. Copy the official CA and share the viral tweet."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://donnie-dump.example" />
     <link
       rel="icon"
       type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23000000'/%3E%3Ctext x='32' y='40' font-size='28' text-anchor='middle' fill='%23f5b700'%3EDD%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23020b1e'/%3E%3Ctext x='32' y='40' font-size='28' text-anchor='middle' fill='%23ff335b'%3EDD%3C/text%3E%3C/svg%3E"
     />
     <style>
       :root {
-        font-family: "Inter", "Space Grotesk", system-ui, -apple-system,
-          BlinkMacSystemFont, "Segoe UI", sans-serif;
-        color: #fdf0ff;
-        background: #1d0f1f;
+        font-family: "Inter", "Space Grotesk", "Bebas Neue", system-ui, sans-serif;
+        color: #fef8f8;
+        background: #040b1a;
       }
       *,
       *::before,
@@ -41,187 +40,203 @@ Deploy instructions:
       body {
         margin: 0;
         min-height: 100vh;
-        background: radial-gradient(circle at 20% 20%, #5c2f69, #341535 65%),
-          linear-gradient(145deg, #4e235b, #261226 55%);
-        color: #fdf0ff;
+        background: radial-gradient(circle at top, #0d1b3f, #050b1e 55%),
+          repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.015) 0,
+            rgba(255, 255, 255, 0.015) 6px,
+            transparent 6px,
+            transparent 24px
+          ),
+          #03070f;
+        color: #fef8f8;
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
       }
       a {
         color: inherit;
+        text-decoration: none;
       }
       .site-nav {
-        width: min(1100px, 100%);
+        width: min(1200px, 100%);
         margin: 0 auto;
-        padding: 1.2rem 1.5rem;
+        padding: 1.1rem 1.7rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 1rem;
         position: sticky;
         top: 0;
-        backdrop-filter: blur(12px);
-        background: rgba(24, 9, 27, 0.6);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        z-index: 10;
+        z-index: 15;
+        backdrop-filter: blur(16px);
+        background: rgba(3, 6, 18, 0.85);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
       }
       .brand {
         display: flex;
         align-items: center;
-        gap: 0.7rem;
+        gap: 0.75rem;
         font-weight: 700;
-        letter-spacing: 0.05em;
+        font-size: 1.15rem;
+        letter-spacing: 0.08em;
       }
-      .brand-mark {
-        width: 42px;
-        height: 42px;
-        border-radius: 14px;
-        display: grid;
-        place-items: center;
-        font-size: 1.3rem;
-        background: linear-gradient(145deg, #ff5bbd, #ffa94d);
-        color: #1a0a1b;
-        animation: pulse 4s ease-in-out infinite;
+      .brand svg {
+        width: 48px;
+        height: 48px;
       }
       .nav-ca {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 0.35rem;
-        font-size: 0.9rem;
+        gap: 0.4rem;
+        font-size: 0.92rem;
         opacity: 0.85;
       }
       .nav-ca code {
         font-family: "JetBrains Mono", "Roboto Mono", monospace;
-        background: rgba(255, 255, 255, 0.08);
-        padding: 0.35rem 0.6rem;
+        background: rgba(234, 239, 255, 0.1);
+        padding: 0.3rem 0.7rem;
         border-radius: 999px;
       }
       .nav-link {
-        text-decoration: none;
         font-weight: 600;
-        color: #ffdeff;
-        opacity: 0.9;
+        color: #fddbc8;
       }
       main {
-        width: min(1100px, 100%);
+        width: min(1200px, 100%);
         margin: 0 auto;
-        padding: 3rem 1.5rem 4rem;
+        padding: 3rem 1.7rem 4rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        position: relative;
-        z-index: 1;
       }
       .hero {
-        text-align: center;
-        padding: 3.5rem 1.5rem 3rem;
-        border-radius: 36px;
-        background: radial-gradient(circle at top, #6e3374, #3a1a42);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        box-shadow: 0 45px 80px rgba(14, 4, 18, 0.45);
+        background: linear-gradient(135deg, #051432, #131c3e 55%, #28162d 100%);
+        border-radius: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 50px 80px rgba(5, 1, 15, 0.6);
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
         position: relative;
         overflow: hidden;
-      }
-      .pre-title {
-        letter-spacing: 0.25em;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.7);
-        margin-bottom: 0.6rem;
       }
       .hero::after {
         content: "";
         position: absolute;
         inset: 0;
-        background: radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.2), transparent 55%);
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='2'%3E%3Cpath d='M0 90H180M90 0V180'/%3E%3C/g%3E%3C/svg%3E")
+          center / contain;
         opacity: 0.4;
       }
-      .hero-content {
+      .hero-content,
+      .hero-art {
         position: relative;
         z-index: 1;
-        animation: fadeUp 1.1s ease forwards;
       }
       .hero h1 {
         margin: 0;
-        font-size: clamp(2.25rem, 6vw, 4.8rem);
-        letter-spacing: 0.08em;
+        font-size: clamp(2.6rem, 6vw, 4.5rem);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .hero h1 span {
+        display: block;
+        color: #ff4c4c;
+        letter-spacing: 0.22em;
       }
       .hero p {
-        max-width: 48ch;
-        margin: 1.2rem auto;
-        line-height: 1.7;
-        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.05rem;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.88);
+        margin-bottom: 1.2rem;
+      }
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.55rem 1rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
       }
       .hero-actions {
         display: flex;
-        flex-direction: column;
-        gap: 0.9rem;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
       .cta {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
         border: none;
         border-radius: 999px;
-        padding: 0.95rem 1.8rem;
+        padding: 0.95rem 1.9rem;
         font-size: 1rem;
         font-weight: 600;
         cursor: pointer;
-        background: linear-gradient(120deg, #f74fb6, #ffb347);
-        color: #1d0f1f;
-        transition: transform 150ms ease, box-shadow 150ms ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        color: #050b1e;
+        background: linear-gradient(130deg, #ff3747, #ffa03d);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        transition: transform 120ms ease, box-shadow 120ms ease;
+      }
+      .cta.secondary {
+        background: transparent;
+        color: #fef8f8;
+        border: 1px solid rgba(255, 255, 255, 0.3);
       }
       .cta:hover {
         transform: translateY(-2px);
-        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.55);
       }
-      .cta.secondary {
-        background: rgba(255, 255, 255, 0.08);
-        color: #fdf0ff;
-        box-shadow: none;
+      .hero-art {
+        border-radius: 32px;
+        padding: 0;
+        background: rgba(10, 13, 34, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        overflow: hidden;
+      }
+      .hero-art img {
+        width: 100%;
+        display: block;
       }
       section {
-        background: rgba(20, 10, 23, 0.65);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 28px;
+        background: rgba(4, 8, 25, 0.85);
+        border-radius: 30px;
         padding: 2.5rem;
-        box-shadow: 0 35px 70px rgba(9, 3, 14, 0.5);
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
       }
-      section h2,
-      section h3 {
+      section h2 {
         margin-top: 0;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.08em;
+        font-size: 2rem;
       }
       section p {
         color: rgba(255, 255, 255, 0.85);
-        line-height: 1.7;
+        line-height: 1.8;
       }
       .tweet-showcase {
-        background: radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.12), transparent 65%),
-          rgba(20, 10, 23, 0.72);
+        background: linear-gradient(140deg, rgba(4, 10, 30, 0.95), rgba(25, 9, 18, 0.85));
       }
       .tweet-card {
         margin-top: 1.5rem;
-        border-radius: 26px;
-        background: rgba(6, 4, 15, 0.75);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(0, 0, 0, 0.45);
         padding: 1.8rem;
-        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
-        animation: float 10s ease-in-out infinite;
       }
       .tweet-meta {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         gap: 1rem;
       }
       .tweet-user {
@@ -230,106 +245,81 @@ Deploy instructions:
         gap: 0.85rem;
       }
       .tweet-avatar {
-        width: 56px;
-        height: 56px;
+        width: 58px;
+        height: 58px;
         border-radius: 18px;
-        background: linear-gradient(145deg, #ff5bbd, #ff796d);
         display: grid;
         place-items: center;
         font-weight: 700;
-        font-size: 1.2rem;
-      }
-      .tweet-user strong {
-        display: block;
-        font-size: 1.05rem;
-      }
-      .tweet-user span {
-        display: block;
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.7);
+        background: linear-gradient(140deg, #ff4c4c, #f8d257);
+        color: #0c090f;
       }
       .tweet-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35rem;
-        font-size: 0.9rem;
-        color: #ffd1ff;
-        background: rgba(255, 255, 255, 0.08);
         border-radius: 999px;
-        padding: 0.4rem 0.8rem;
+        padding: 0.4rem 0.85rem;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        font-size: 0.9rem;
       }
       .tweet-text {
         margin: 1.2rem 0;
         font-size: 1.05rem;
       }
       .tweet-quote {
+        margin-top: 1rem;
         border-radius: 20px;
-        padding: 1.2rem 1.4rem;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 1.3rem;
+        background: rgba(255, 255, 255, 0.04);
         font-family: "JetBrains Mono", monospace;
       }
-      .tweet-quote::before {
-        content: "Rep. Marjorie Taylor Greene 🇺🇸";
-        display: block;
-        font-size: 0.9rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        margin-bottom: 0.8rem;
-        color: #ffb3f7;
-      }
       .tweet-stats {
-        display: flex;
-        gap: 1.2rem;
         margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         font-size: 0.9rem;
-        opacity: 0.75;
+        color: rgba(255, 255, 255, 0.75);
       }
       .tweet-link {
-        margin-top: 1.4rem;
+        margin-top: 1.2rem;
         display: inline-flex;
-        gap: 0.45rem;
         align-items: center;
-        color: #9ad0ff;
-        text-decoration: none;
+        gap: 0.4rem;
+        color: #a6cfff;
         font-weight: 600;
       }
-      .ca-section {
-        background: rgba(22, 12, 28, 0.78);
-      }
       .ca-display {
+        margin-top: 1.3rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        margin-top: 1.5rem;
       }
       .ca-display code {
-        font-family: "JetBrains Mono", "Roboto Mono", monospace;
-        background: rgba(0, 0, 0, 0.4);
+        padding: 1.1rem;
         border-radius: 20px;
-        padding: 1.2rem;
-        font-size: 1rem;
-        letter-spacing: 0.03em;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(0, 0, 0, 0.45);
+        font-family: "JetBrains Mono", monospace;
         word-break: break-all;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        letter-spacing: 0.03em;
       }
       .status {
-        min-height: 1.25rem;
-        margin-top: 0.8rem;
-        color: #ffc6ff;
+        min-height: 1.2rem;
+        margin-top: 0.6rem;
+        color: #ffbec0;
       }
       .address-list {
         list-style: none;
         padding: 0;
-        margin: 1.2rem 0 0;
+        margin: 1rem 0 0;
         display: flex;
         flex-direction: column;
-        gap: 0.7rem;
+        gap: 0.6rem;
       }
       .address-list li {
-        border-radius: 16px;
         padding: 0.8rem 1rem;
+        border-radius: 16px;
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.08);
         font-family: "JetBrains Mono", monospace;
@@ -341,10 +331,10 @@ Deploy instructions:
         gap: 1rem;
       }
       .community-card {
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.03);
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
         padding: 1.8rem;
-        border: 1px solid rgba(255, 255, 255, 0.08);
       }
       .x-action {
         display: inline-flex;
@@ -352,129 +342,77 @@ Deploy instructions:
         justify-content: center;
         width: 100%;
         border-radius: 999px;
-        text-decoration: none;
-        margin-top: 1rem;
-        padding: 0.85rem 1.2rem;
+        padding: 0.85rem 1.3rem;
         font-weight: 600;
         border: none;
-        background: linear-gradient(130deg, #1d9bf0, #6ad7ff);
-        color: #050b24;
         cursor: pointer;
-        transition: opacity 0.2s ease;
+        background: linear-gradient(120deg, #0d8af0, #64c0ff);
+        color: #04102b;
+        transition: opacity 0.2s;
       }
       .x-action:hover {
         opacity: 0.85;
       }
       .x-action.ghost {
         background: transparent;
-        color: #f1d7ff;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-      }
-      .meme-collage {
-        background: rgba(19, 10, 25, 0.78);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        color: #fef8f8;
       }
       .meme-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 1.2rem;
+        gap: 1rem;
         margin-top: 1.4rem;
       }
       .meme-card {
-        border-radius: 22px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
         background: rgba(255, 255, 255, 0.04);
         padding: 0.8rem;
-        border: 1px solid rgba(255, 255, 255, 0.08);
         display: flex;
         flex-direction: column;
-        gap: 0.45rem;
-        align-items: flex-start;
-        color: rgba(255, 255, 255, 0.8);
+        gap: 0.5rem;
+        color: rgba(255, 255, 255, 0.78);
       }
       .meme-card figcaption {
         font-size: 0.85rem;
-        text-transform: uppercase;
         letter-spacing: 0.08em;
       }
-      .meme-svg {
-        width: 100%;
-        border-radius: 16px;
-      }
-      .floating-memes {
+      .floating-badges {
         position: fixed;
         inset: 0;
         pointer-events: none;
         z-index: 0;
       }
-      .floating-memes .meme-card {
+      .floating-badges .badge {
         position: absolute;
         width: 160px;
         opacity: 0.35;
         animation: drift 30s linear infinite;
       }
-      .floating-memes .meme-one {
-        top: 10%;
+      .badge:nth-child(1) {
+        top: 12%;
         left: 5%;
-        animation-delay: 0s;
       }
-      .floating-memes .meme-two {
-        bottom: 15%;
+      .badge:nth-child(2) {
+        bottom: 12%;
         right: 8%;
-        animation-delay: 4s;
+        animation-delay: 6s;
       }
-      .floating-memes .meme-three {
-        top: 28%;
-        right: 12%;
-        animation-delay: 8s;
-      }
-      .floating-memes .meme-four {
-        bottom: 8%;
-        left: 15%;
+      .badge:nth-child(3) {
+        top: 30%;
+        right: 14%;
         animation-delay: 12s;
+      }
+      .badge:nth-child(4) {
+        bottom: 6%;
+        left: 18%;
+        animation-delay: 18s;
       }
       footer {
         text-align: center;
-        color: rgba(255, 255, 255, 0.6);
         padding: 2rem 1rem 3rem;
-        font-size: 0.9rem;
-      }
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes pulse {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.07);
-        }
-      }
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-      @keyframes drift {
-        0% {
-          transform: translate3d(0, 0, 0) rotate(0deg);
-        }
-        50% {
-          transform: translate3d(10px, -20px, 0) rotate(2deg);
-        }
-        100% {
-          transform: translate3d(-10px, 10px, 0) rotate(-2deg);
-        }
+        color: rgba(255, 255, 255, 0.6);
       }
       .visually-hidden {
         position: absolute;
@@ -486,12 +424,26 @@ Deploy instructions:
         clip: rect(0, 0, 0, 0);
         border: 0;
       }
-      @media (max-width: 720px) {
-        section {
-          padding: 1.8rem;
+      @keyframes drift {
+        0% {
+          transform: translate3d(0, 0, 0) rotate(0deg);
         }
+        50% {
+          transform: translate3d(10px, -10px, 0) rotate(3deg);
+        }
+        100% {
+          transform: translate3d(-10px, 10px, 0) rotate(-3deg);
+        }
+      }
+      @media (max-width: 720px) {
         .site-nav {
           flex-direction: column;
+        }
+        .hero {
+          padding: 2rem;
+        }
+        section {
+          padding: 1.8rem;
         }
         .tweet-meta {
           flex-direction: column;
@@ -506,114 +458,95 @@ Deploy instructions:
   <body>
     <header class="site-nav">
       <div class="brand">
-        <div class="brand-mark">DD</div>
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#082653" />
+          <rect y="28" width="64" height="36" fill="#c0293a" />
+          <g fill="#fff">
+            <circle cx="18" cy="20" r="4" />
+            <circle cx="30" cy="20" r="4" />
+            <circle cx="42" cy="20" r="4" />
+          </g>
+        </svg>
         <span>Donnie Dump</span>
       </div>
       <div class="nav-ca">
         <span>Official CA</span>
         <code>ELQEzsCJTuWuZc2t2Mn8eFXc6KF6GNHGdekHeDhcpump</code>
       </div>
-      <a class="nav-link" href="#tweet">Tweet mission</a>
+      <a class="nav-link" href="#coin-section">Copy Contract</a>
     </header>
 
-    <div class="floating-memes" aria-hidden="true">
-      <figure class="meme-card meme-one">
-        <svg viewBox="0 0 160 160" class="meme-svg">
-          <rect width="160" height="160" rx="26" fill="#5f2f63" />
-          <polyline
-            points="15,40 80,95 130,55"
-            fill="none"
-            stroke="#ff4b4b"
-            stroke-width="8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <rect x="25" y="55" width="8" height="32" rx="3" fill="#ff9953" />
-          <rect x="45" y="65" width="8" height="28" rx="3" fill="#f6c343" />
-          <rect x="65" y="70" width="8" height="25" rx="3" fill="#ff9953" />
-          <circle cx="100" cy="70" r="28" fill="#f5c59b" />
-          <path d="M75 50 Q100 30 125 48 Q110 28 82 32 Z" fill="#f4c341" />
-          <rect x="90" y="98" width="24" height="26" rx="8" fill="#0f0c2c" />
-        </svg>
-        <figcaption>Chart Doom</figcaption>
-      </figure>
-      <figure class="meme-card meme-two">
-        <svg viewBox="0 0 160 160" class="meme-svg">
-          <rect width="160" height="160" rx="26" fill="#3a123c" />
-          <rect x="30" y="30" width="100" height="120" rx="30" fill="#991f37" />
-          <rect x="55" y="20" width="50" height="25" rx="10" fill="#f6d964" />
-          <rect x="70" y="55" width="20" height="45" fill="#d61a1a" />
-          <path
-            d="M45 115 L80 85 L115 115"
-            fill="none"
-            stroke="#ff69a6"
-            stroke-width="5"
-            stroke-linecap="round"
-          />
-          <line x1="20" y1="30" x2="140" y2="140" stroke="#f02f63" stroke-width="2" stroke-dasharray="6 12" />
-        </svg>
-        <figcaption>Neon Fury</figcaption>
-      </figure>
-      <figure class="meme-card meme-three">
-        <svg viewBox="0 0 160 160" class="meme-svg">
-          <rect width="160" height="160" rx="26" fill="#4d2256" />
-          <rect x="40" y="70" width="80" height="70" rx="30" fill="#f9d19a" />
-          <rect x="60" y="30" width="60" height="50" rx="18" fill="#f7cd8a" />
-          <rect x="70" y="15" width="60" height="25" rx="12" fill="#e1aa3b" />
-          <circle cx="115" cy="40" r="10" fill="#fff" />
-          <path d="M25 110 C50 90 65 90 95 140" stroke="#d9a64d" stroke-width="10" fill="none" stroke-linecap="round" />
-          <rect x="105" y="90" width="10" height="30" rx="4" fill="#ff6b7c" />
-          <rect x="120" y="85" width="10" height="25" rx="4" fill="#ffb347" />
-        </svg>
-        <figcaption>Salt the Market</figcaption>
-      </figure>
-      <figure class="meme-card meme-four">
-        <svg viewBox="0 0 160 160" class="meme-svg">
-          <rect width="160" height="160" rx="26" fill="#2c0f30" />
-          <text
-            x="80"
-            y="80"
-            font-size="38"
-            text-anchor="middle"
-            fill="#ffd3ff"
-            font-weight="700"
-          >
-            $DUMP
-          </text>
-          <polyline
-            points="30,110 75,95 90,125 135,60"
-            fill="none"
-            stroke="#ff4b4b"
-            stroke-width="8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <polygon points="135,60 150,70 141,35" fill="#ff4b4b" />
-        </svg>
-        <figcaption>Arrow Down</figcaption>
-      </figure>
+    <div class="floating-badges" aria-hidden="true">
+      <svg class="badge" viewBox="0 0 160 160">
+        <rect width="160" height="160" rx="24" fill="#0b1d43" />
+        <path d="M30 120 L80 40 L130 120" fill="none" stroke="#ff304b" stroke-width="12" stroke-linecap="round" />
+        <circle cx="80" cy="78" r="22" fill="#fbd1a2" />
+        <rect x="60" y="100" width="40" height="28" rx="10" fill="#0f0d2a" />
+        <rect x="62" y="32" width="36" height="22" rx="10" fill="#ffe97d" />
+      </svg>
+      <svg class="badge" viewBox="0 0 160 160">
+        <rect width="160" height="160" rx="24" fill="#2b0d1d" />
+        <rect x="30" y="30" width="100" height="120" rx="28" fill="#d02e3a" />
+        <rect x="42" y="45" width="76" height="30" rx="14" fill="#fdd97d" />
+        <line x1="30" y1="120" x2="130" y2="50" stroke="#ff5f5f" stroke-width="10" stroke-linecap="round" />
+      </svg>
+      <svg class="badge" viewBox="0 0 160 160">
+        <rect width="160" height="160" rx="24" fill="#161a3c" />
+        <text x="80" y="80" text-anchor="middle" fill="#ffffff" font-size="40" font-weight="700">$DUMP</text>
+        <polyline
+          points="30,120 60,90 85,125 130,60"
+          fill="none"
+          stroke="#ff3747"
+          stroke-width="12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <svg class="badge" viewBox="0 0 160 160">
+        <rect width="160" height="160" rx="24" fill="#0a1329" />
+        <path
+          d="M40 110 C50 80 90 90 120 40"
+          stroke="#f0b02d"
+          stroke-width="12"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <circle cx="115" cy="38" r="18" fill="#f4c48d" />
+        <rect x="45" y="18" width="65" height="26" rx="12" fill="#fff1b0" />
+      </svg>
     </div>
 
     <main>
       <section class="hero" id="hero">
         <div class="hero-content">
-          <p class="pre-title">World record dump energy</p>
-          <h1>DONNIE DUMP</h1>
+          <div class="hero-badge">Truth Social Roast Verified</div>
+          <h1>
+            DONNIE
+            <span>DUMP</span>
+          </h1>
           <p>
-            Rep. Marjorie Taylor Greene blasted “Donnie Dump” on Truth Social, warning that
-            his trash talk wouldn’t distract anyone from reality. The roast became lore,
-            the lore became a memecoin, and now every neon ribbon on this page is a tribute
-            to that single, savage quote.
+            Rep. Marjorie Taylor Greene warned that “Donnie Dump” couldn’t hide behind cheap
+            insults. We turned that sermon into lore, minted the meme, and wrapped it in
+            flag-draped swagger. Copy the contract, salute the roast, and keep the timeline
+            flooded with red, white, and neon blue.
           </p>
           <div class="hero-actions">
-            <button class="cta" data-scroll="#coin-section">Copy the CA</button>
-            <a class="cta secondary" href="#tweet">Replay the tweet</a>
+            <button class="cta" data-scroll="#coin-section">Copy the Contract</button>
+            <a class="cta secondary" href="#tweet">See the Tweet</a>
           </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="hero.svg" alt="Stylized Donnie Dump illustration" loading="lazy" />
         </div>
       </section>
 
       <section class="tweet-showcase" id="tweet">
-        <h2>Tweet spotlight</h2>
+        <h2>Tweet Spotlight</h2>
+        <p>
+          When Ritzeyy18 posted the MTG call-out, the screenshot became canon. This block
+          keeps the evidence framed like a presidential proclamation—no excuses, no fake
+          forks.
+        </p>
         <article class="tweet-card" aria-label="Embedded tweet from X">
           <header class="tweet-meta">
             <div class="tweet-user">
@@ -623,24 +556,12 @@ Deploy instructions:
                 <span>@Ritzeyy18 · 13h</span>
               </div>
             </div>
-            <span class="tweet-badge">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2l2.09 6.26H20l-5.17 3.76L16.18 18 12 14.73 7.82 18l1.35-5.98L4 8.26h5.91z"
-                />
-              </svg>
-              World Record mode
-            </span>
+            <div class="tweet-badge">World Record Mode</div>
           </header>
           <p class="tweet-text">
-            He called himself Donnie Dump and dared MTG to clap back. She did—and now it's
-            canon. We pin the quote, the CA, and tell everyone to smash the share button.
+            He called himself Donnie Dump, dared MTG to swing, and now her Truth Social burn
+            drives our entire lore stack. Bookmark this receipt and hit share like it’s
+            election night.
           </p>
           <div class="tweet-quote">
             “Donnie Dump wants to run his mouth on Truth Social, calling me names like
@@ -653,17 +574,22 @@ Deploy instructions:
             <span>#DonnieDump</span>
             <span>Truth Social screenshot archived</span>
           </div>
-          <a class="tweet-link" href="https://x.com/Ritzeyy18/status/1990122676262781306" target="_blank" rel="noopener">
-            View this tweet on X →
-          </a>
+          <a
+            class="tweet-link"
+            href="https://x.com/Ritzeyy18/status/1990122676262781306"
+            target="_blank"
+            rel="noopener"
+            >View this tweet on X →</a
+          >
         </article>
       </section>
 
       <section class="ca-section" id="coin-section">
-        <h2>Official contract address</h2>
+        <h2>Official Contract Address</h2>
         <p>
-          No guessing, no scam forks. This is the only contract this site copies,
-          localStores, and flashes on reload. Hit the button once and your clipboard + local history are synced.
+          American proof-of-clout: we only surface the verified CA, drop it into
+          localStorage, and punch it into your clipboard on every click. No forms, just the
+          source of truth.
         </p>
         <div class="ca-display">
           <code id="ca-value">ELQEzsCJTuWuZc2t2Mn8eFXc6KF6GNHGdekHeDhcpump</code>
@@ -682,120 +608,88 @@ Deploy instructions:
         <div class="community-card">
           <h3>Compose on X</h3>
           <p>
-            Auto-fill a spicy tweet with the CA and #DonnieDump, then drop those meme
-            screenshots right after you hit send.
+            Auto-fill a patriotic dunk with the CA and <strong>#DonnieDump</strong>. Toss in
+            the meme grid below for maximum star-spangled chaos.
           </p>
           <button id="x-btn" class="x-action" type="button">Open tweet composer</button>
         </div>
         <div class="community-card">
           <h3>Join the dumpers</h3>
           <p>
-            Hang out in the official X community, coordinate post blasts, and share every
-            new MTG reaction gif you find.
+            The official X community is where the screenshotted truth lives. Coordinate
+            raids, meme drops, and world-record pushes.
           </p>
           <a
             class="x-action ghost"
             href="https://x.com/i/communities/1990104284193853558"
             target="_blank"
             rel="noopener"
-            >Join the community</a
+            >Enter the community</a
           >
         </div>
       </section>
 
       <section class="meme-collage">
-        <h2>Meme radar</h2>
+        <h2>American Meme Grid</h2>
         <p>
-          Inspired by the set you sent over—cartoon faces, neon fury, salt-bae charts, and
-          the almighty $DUMP arrow. They live as floating stickers and as a shareable grid
-          below.
+          Adapted from the provided Trump memes and stylized into red-white-blue stickers.
+          Save them, slap them on the timeline, and make Wall Street cry.
         </p>
         <div class="meme-grid">
           <figure class="meme-card">
-            <svg viewBox="0 0 160 160" class="meme-svg" aria-hidden="true">
-              <rect width="160" height="160" rx="26" fill="#5f2f63" />
+            <svg viewBox="0 0 160 160" aria-hidden="true">
+              <rect width="160" height="160" rx="24" fill="#0b1c40" />
               <polyline
-                points="15,40 80,95 130,55"
+                points="20,120 60,80 90,110 140,50"
                 fill="none"
-                stroke="#ff4b4b"
-                stroke-width="8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <rect x="25" y="55" width="8" height="32" rx="3" fill="#ff9953" />
-              <rect x="45" y="65" width="8" height="28" rx="3" fill="#f6c343" />
-              <rect x="65" y="70" width="8" height="25" rx="3" fill="#ff9953" />
-              <circle cx="100" cy="70" r="28" fill="#f5c59b" />
-              <path d="M75 50 Q100 30 125 48 Q110 28 82 32 Z" fill="#f4c341" />
-              <rect x="90" y="98" width="24" height="26" rx="8" fill="#0f0c2c" />
-            </svg>
-            <figcaption>Donnie arrow stare</figcaption>
-          </figure>
-          <figure class="meme-card">
-            <svg viewBox="0 0 160 160" class="meme-svg" aria-hidden="true">
-              <rect width="160" height="160" rx="26" fill="#3a123c" />
-              <rect x="30" y="30" width="100" height="120" rx="30" fill="#991f37" />
-              <rect x="55" y="20" width="50" height="25" rx="10" fill="#f6d964" />
-              <rect x="70" y="55" width="20" height="45" fill="#d61a1a" />
-              <path
-                d="M45 115 L80 85 L115 115"
-                fill="none"
-                stroke="#ff69a6"
-                stroke-width="5"
-                stroke-linecap="round"
-              />
-              <line x1="20" y1="30" x2="140" y2="140" stroke="#f02f63" stroke-width="2" stroke-dasharray="6 12" />
-            </svg>
-            <figcaption>Neon vengeance</figcaption>
-          </figure>
-          <figure class="meme-card">
-            <svg viewBox="0 0 160 160" class="meme-svg" aria-hidden="true">
-              <rect width="160" height="160" rx="26" fill="#4d2256" />
-              <rect x="40" y="70" width="80" height="70" rx="30" fill="#f9d19a" />
-              <rect x="60" y="30" width="60" height="50" rx="18" fill="#f7cd8a" />
-              <rect x="70" y="15" width="60" height="25" rx="12" fill="#e1aa3b" />
-              <circle cx="115" cy="40" r="10" fill="#fff" />
-              <path
-                d="M25 110 C50 90 65 90 95 140"
-                stroke="#d9a64d"
+                stroke="#ff3747"
                 stroke-width="10"
-                fill="none"
-                stroke-linecap="round"
-              />
-              <rect x="105" y="90" width="10" height="30" rx="4" fill="#ff6b7c" />
-              <rect x="120" y="85" width="10" height="25" rx="4" fill="#ffb347" />
-            </svg>
-            <figcaption>Salt bae candles</figcaption>
-          </figure>
-          <figure class="meme-card">
-            <svg viewBox="0 0 160 160" class="meme-svg" aria-hidden="true">
-              <rect width="160" height="160" rx="26" fill="#2c0f30" />
-              <text
-                x="80"
-                y="80"
-                font-size="38"
-                text-anchor="middle"
-                fill="#ffd3ff"
-                font-weight="700"
-              >
-                $DUMP
-              </text>
-              <polyline
-                points="30,110 75,95 90,125 135,60"
-                fill="none"
-                stroke="#ff4b4b"
-                stroke-width="8"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-              <polygon points="135,60 150,70 141,35" fill="#ff4b4b" />
+              <circle cx="95" cy="65" r="30" fill="#f8c398" />
+              <rect x="82" y="20" width="64" height="18" rx="9" fill="#ffe686" />
+              <rect x="75" y="95" width="20" height="35" rx="9" fill="#132047" />
             </svg>
-            <figcaption>Arrow of doom</figcaption>
+            <figcaption>Chart Doom Donnie</figcaption>
+          </figure>
+          <figure class="meme-card">
+            <svg viewBox="0 0 160 160" aria-hidden="true">
+              <rect width="160" height="160" rx="24" fill="#2b0d1d" />
+              <rect x="30" y="30" width="100" height="120" rx="32" fill="#d92d39" />
+              <rect x="50" y="20" width="70" height="28" rx="12" fill="#ffd768" />
+              <line x1="20" y1="130" x2="140" y2="40" stroke="#ff5f5f" stroke-width="12" stroke-linecap="round" />
+            </svg>
+            <figcaption>Neon Fury</figcaption>
+          </figure>
+          <figure class="meme-card">
+            <svg viewBox="0 0 160 160" aria-hidden="true">
+              <rect width="160" height="160" rx="24" fill="#401535" />
+              <rect x="40" y="70" width="80" height="70" rx="30" fill="#f9d5a0" />
+              <rect x="58" y="30" width="70" height="50" rx="18" fill="#f6ce87" />
+              <rect x="70" y="10" width="60" height="30" rx="14" fill="#ffc24d" />
+              <path d="M30 115 C60 100 70 100 100 145" stroke="#dca147" stroke-width="10" fill="none" />
+            </svg>
+            <figcaption>Salt Bae Candles</figcaption>
+          </figure>
+          <figure class="meme-card">
+            <svg viewBox="0 0 160 160" aria-hidden="true">
+              <rect width="160" height="160" rx="24" fill="#160b25" />
+              <text x="80" y="75" text-anchor="middle" fill="#fff" font-size="36" font-weight="700">$Dump</text>
+              <polyline
+                points="30,120 75,95 90,125 140,55"
+                fill="none"
+                stroke="#ff3747"
+                stroke-width="12"
+                stroke-linecap="round"
+              />
+            </svg>
+            <figcaption>Arrow of Doom</figcaption>
           </figure>
         </div>
       </section>
     </main>
-    <footer>Built for chaos, screenshots, neon dumps, and a legendary CA.</footer>
+    <footer>Built for liberty, laughs, and the official Donnie Dump CA.</footer>
     <script>
       const STORAGE_KEY = "donnieDumpAddresses";
       const DEFAULT_CA = "ELQEzsCJTuWuZc2t2Mn8eFXc6KF6GNHGdekHeDhcpump";
@@ -826,9 +720,9 @@ Deploy instructions:
       const renderAddresses = (list) => {
         addressList.innerHTML = "";
         list.forEach((address) => {
-          const item = document.createElement("li");
-          item.textContent = address;
-          addressList.appendChild(item);
+          const li = document.createElement("li");
+          li.textContent = address;
+          addressList.appendChild(li);
         });
       };
 
@@ -850,7 +744,7 @@ Deploy instructions:
 
       const setStatus = (message, isError = false) => {
         statusEl.textContent = message;
-        statusEl.style.color = isError ? "#ff7b7b" : "#ffc6ff";
+        statusEl.style.color = isError ? "#ff6e7c" : "#ffbec0";
       };
 
       const copyToClipboard = async (text) => {
@@ -883,7 +777,7 @@ Deploy instructions:
         renderAddresses(addresses);
         saveAddresses(addresses);
         await copyToClipboard(DEFAULT_CA);
-        setStatus("Official CA copied, logged, and ready for spam.");
+        setStatus("Official CA copied, logged, and ready to blast.");
       });
 
       xButton.addEventListener("click", () => {
